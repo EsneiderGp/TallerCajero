@@ -5,6 +5,7 @@ let reti_form = document.getElementById('reti_form');
 let consig_form = document.getElementById('consig_form');
 let transfer_form = document.getElementById('transfer_form');
 let close_form = document.getElementById('close_form');
+let img_logo = document.getElementById('logo');
 
 var Usuarios = []
 var Contrasenas = []
@@ -41,66 +42,73 @@ function Registrarse() {
 
 
 function IniciarSesion() {
-    login_form.style.display = 'block'
+    login_form.style.display = 'flex'
     registro_form.style.display = 'none'
     consul_form.style.display = 'none'
     reti_form.style.display = 'none'
     consig_form.style.display = 'none'
     transfer_form.style.display = 'none'
     close_form.style.display = 'none'
+    img_logo.style.width = '100px'
 }
 function Abrircuenta() {
-    registro_form.style.display = 'block'
+    registro_form.style.display = 'flex'
     login_form.style.display = 'none'
     consul_form.style.display = 'none'
     reti_form.style.display = 'none'
     consig_form.style.display = 'none'
     transfer_form.style.display = 'none'
     close_form.style.display = 'none'
+    img_logo.style.width = '100px'
 }
 function consultarSaldo() {
-    consul_form.style.display = 'block'
+    consul_form.style.display = 'flex'
     registro_form.style.display = 'none'
     login_form.style.display = 'none'
     reti_form.style.display = 'none'
     consig_form.style.display = 'none'
     transfer_form.style.display = 'none'
     close_form.style.display = 'none'
+    img_logo.style.width = '100px'
 }
 function retirarDinero() {
-    reti_form.style.display = 'block'
+    reti_form.style.display = 'flex'
     registro_form.style.display = 'none'
     consul_form.style.display = 'none'
     login_form.style.display = 'none'
     consig_form.style.display = 'none'
     transfer_form.style.display = 'none'
     close_form.style.display = 'none'
+    img_logo.style.width = '100px'
 }
 function transferirDinero() {
-    transfer_form.style.display = 'block'
+    transfer_form.style.display = 'flex'
     registro_form.style.display = 'none'
     consul_form.style.display = 'none'
     reti_form.style.display = 'none'
     consig_form.style.display = 'none'
     login_form.style.display = 'none'
     close_form.style.display = 'none'
+    img_logo.style.width = '100px'
 }
 function depositarDinero() {
-    consig_form.style.display = 'block'
+    consig_form.style.display = 'flex'
     registro_form.style.display = 'none'
     consul_form.style.display = 'none'
     reti_form.style.display = 'none'
     transfer_form.style.display = 'none'
     login_form.style.display = 'none'
     close_form.style.display = 'none'
+    img_logo.style.width = '100px'
 }
 function cerrarSesion() {
-    close_form.style.display = 'block'
+    close_form.style.display = 'flex'
     registro_form.style.display = 'none'
     consul_form.style.display = 'none'
     reti_form.style.display = 'none'
     consig_form.style.display = 'none'
     transfer_form.style.display = 'none'
     login_form.style.display = 'none'
+    img_logo.style.width = '100px'
 }
 

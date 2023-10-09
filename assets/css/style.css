@@ -2,7 +2,12 @@
     margin: 0%;
     box-sizing: border-box;
     padding: 0%;
+    font-family: sans-serif;
 
+}
+.logo{
+    width: 300px;
+    transition: width .3s ease;
 }
 body{
     height: 100vh;
@@ -19,6 +24,14 @@ button{
     text-align: left;
     padding-left: 1rem;
 }
+input{
+    outline: none;
+    border:none ;
+    padding: 0.7rem;
+    width: 400px;
+    border-radius: 4px;
+}
+
 .menu-opciones{
     width: 350px;
     display: flex;
@@ -40,11 +53,32 @@ button{
 
 }
 .card{
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
 }
+.card h1{
+    color: white;
+    text-align: center;
+
+}
+.card button{
+    width: 100%;
+    background-color:#f38451;
+    text-align: center;
+    width: 150px;
+    border-radius: 200px; 
+    font-size: 1rem;
+    padding: 0.5rem;
+    transition: background-color .3s ease-in-out;
+}
+.card button:hover{
+    background-color :white;
+    color: #FD4F00;
+    font-weight: bold;
+}
+
 .Cajero{
     display: flex;
     padding: 1.5rem 0;
@@ -53,6 +87,7 @@ button{
     background-color: white;
     width: 1000px;
     gap: 1rem;
+    padding-right: 1.5rem;
     
 }
 .container{
@@ -60,5 +95,18 @@ button{
     padding: 1rem;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
 
+}
+.menu-navegacion{
+    flex: auto;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: #FD4F00;
+    display:grid;
+    place-items: center;
 }
