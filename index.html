@@ -1,67 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/style.css">
     <title>Cajero</title>
 </head>
 <body>
-    <div class="menu=navegacion">
-        <h1>Sistema Bancario</h1>
-        <div id="login_form" class="card">
-            <h1>Iniciar sesion</h1>
-            <input type="text" id="username" placeholder="Usuario">
-            <input type="password" id="password" placeholder="Contraseña">
-            <button onclick="IniciarSesion()">Acceder</button>
+    <div class="container">
+        <h1>Bank fenix</h1>
+        <div class="Cajero">
+            <div id="operaciones" class="menu-opciones">
+                <button onclick="IniciarSesion()">Iniciar Sesión</button>
+                <button onclick="Abrircuenta()">Abrir cuenta </button>
+                <button onclick="consultarSaldo()">Consultar Saldo</button>
+                <button onclick="retirarDinero()">Retirar Dinero</button>
+                <button onclick="transferirDinero()">Transferir Dinero</button>
+                <button onclick="depositarDinero()">Consignar Dinero</button>
+                <button onclick="cerrarSesion()">Cerrar Sesión</button>
+            </div>
+            <div class="menu-navegacion">
+                <div id="login_form" class="card">
+                    <h1>Iniciar sesion</h1>
+                    <input type="text" id="username" placeholder="Usuario">
+                    <input type="password" id="password" placeholder="Contraseña">
+                    <button onclick="IniciarSesion()">Acceder</button>
+                </div>
+                <div id="registro_form" class="card">
+                    <h1>Abrir Cuenta</h1>
+                    <input type="text" id="new_user" placeholder="Usuario">
+                    <input type="password" id="new_pass" placeholder="Contraseña">
+                    <input type="number" id="new_saldo" placeholder="RecargarSaldo">
+                    <input type="text" id="new_cuenta" placeholder="NombreCuenta">
+                    <button onclick="Registrarse()">Crear Cuenta</button>
+                </div>
+                <div id="consul_form" class="card">
+                    <h1>Colsultar Saldo</h1>
+                    <input type="text" id="username" placeholder="Usuario">
+                    <input type="password" id="password" placeholder="Contraseña">
+                    <button onclick="ConsulatarSaldo()">Consultar</button>
+                </div>
+                <div id="reti_form" class="card">
+                    <h1>Retirar Dinero</h1>
+                    <input type="text" id="username" placeholder="Usuario">
+                    <input type="password" id="password" placeholder="Contraseña">
+                    <button onclick="RetirarDinero()">Retirar</button>
+                </div>
+                <div id="consig_form" class="card">
+                    <h1>Consignar Dinero</h1>
+                    <input type="text" id="username" placeholder="Usuario">
+                    <input type="password" id="password" placeholder="Contraseña">
+                    <button onclick="ConsignarDinero()">Consignar</button>
+                </div>
+                <div id="transfer_form" class="card">
+                    <h1>Transferir Dinero</h1>
+                    <input type="text" id="username" placeholder="Usuario">
+                    <input type="password" id="password" placeholder="Contraseña">
+                    <button onclick="TransferirDinero()">Transferir</button>
+                </div>
+                <div id="close_form" class="card">
+                    <h1>Cerrar Sesion</h1>
+                    <input type="text" id="username" placeholder="Usuario">
+                    <input type="password" id="password" placeholder="Contraseña">
+                    <button onclick="RetirarDinero()">Cerrar Sesión</button>
+                </div>
         </div>
-        <div id="registro_form" class="card">
-            <h1>Abrir Cuenta</h1>
-            <input type="text" id="new_user" placeholder="Usuario">
-            <input type="password" id="new_pass" placeholder="Contraseña">
-            <input type="number" id="new_saldo" placeholder="RecargarSaldo">
-            <input type="text" id="new_cuenta" placeholder="NombreCuenta">
-            <button onclick="Registrarse()">Crear Cuenta</button>
-        </div>
-        <div id="consul_form" class="card">
-            <h1>Colsultar Saldo</h1>
-            <input type="text" id="username" placeholder="Usuario">
-            <input type="password" id="password" placeholder="Contraseña">
-            <button onclick="ConsulatarSaldo()">Consultar</button>
-        </div>
-        <div id="reti_form" class="card">
-            <h1>Retirar Dinero</h1>
-            <input type="text" id="username" placeholder="Usuario">
-            <input type="password" id="password" placeholder="Contraseña">
-            <button onclick="RetirarDinero()">Retirar</button>
-        </div>
-        <div id="consig_form" class="card">
-            <h1>Consignar Dinero</h1>
-            <input type="text" id="username" placeholder="Usuario">
-            <input type="password" id="password" placeholder="Contraseña">
-            <button onclick="ConsignarDinero()">Consignar</button>
-        </div>
-        <div id="transfer_form" class="card">
-            <h1>Transferir Dinero</h1>
-            <input type="text" id="username" placeholder="Usuario">
-            <input type="password" id="password" placeholder="Contraseña">
-            <button onclick="TransferirDinero()">Transferir</button>
-        </div>
-        <div id="close_form" class="card">
-            <h1>Cerrar Sesion</h1>
-            <input type="text" id="username" placeholder="Usuario">
-            <input type="password" id="password" placeholder="Contraseña">
-            <button onclick="RetirarDinero()">Cerrar Sesión</button>
-        </div>
-        <div id="operaciones" class="menu-opciones">
-            <button onclick="IniciarSesion()">Iniciar Sesión</button>
-            <button onclick="Abrircuenta()">Abrir cuenta </button>
-            <button onclick="consultarSaldo()">Consultar Saldo</button>
-            <button onclick="retirarDinero()">Retirar Dinero</button>
-            <button onclick="transferirDinero()">Transferir Dinero</button>
-            <button onclick="depositarDinero()">Consignar Dinero</button>
-            <button onclick="cerrarSesion()">Cerrar Sesión</button>
-        </div>
+    </div>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
